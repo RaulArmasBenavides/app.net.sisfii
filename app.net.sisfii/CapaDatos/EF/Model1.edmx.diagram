@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="54a34a97b262427195e7274083ab307d" Name="Diagram1">
+        <EntityTypeShape EntityType="bdgenericModel.actividades" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.alumnos" Width="1.5" PointX="8" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.ambiente" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.aud_audit_modif" Width="1.5" PointX="10.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.ciclo" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.costos_prod_imprenta" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.curso" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.detalle_list_equipos" Width="1.5" PointX="12" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.detalle_organizadores" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.equipo" Width="1.5" PointX="9.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.listaequipos" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.organizadores" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.parametros" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.sala" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.sede" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.sysdiagrams" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.tarifa" Width="1.5" PointX="7.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.usuarios" Width="1.5" PointX="5.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.cursoProgramado" Width="1.5" PointX="12.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdgenericModel.empleado" Width="1.5" PointX="8" PointY="14.25" IsExpanded="true" />
+        <AssociationConnector Association="bdgenericModel.FK__actividad__idamb__5C02A283" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__actividad__idasi__54CB950F" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__actividad__idsal__55BFB948" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__actividad__idsed__5CF6C6BC" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK_actividades_listaequipos" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__participa__idusu__7FB5F314" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__curso__idCiclo__7C6F7215" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__curso__IdTarifa__7D63964E" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__cursoProg__idcur__40257DE4" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK_detalle_list_equipos_Equipo" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__organizad__iddet__71F1E3A2" ManuallyRouted="false" />
+        <AssociationConnector Association="bdgenericModel.FK__empleado__idusua__72E607DB" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
