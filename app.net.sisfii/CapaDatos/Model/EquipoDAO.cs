@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using appcongreso.EF;
+using CapaDatos.EF;
 using CapaDatos.Service;
 
 namespace CapaDatos.Model
@@ -10,8 +10,9 @@ namespace CapaDatos.Model
     {
         // entidades  usando ENTITY FRAMEWORK
         bdgenericEntities e = new bdgenericEntities();
+        
         public void create(usp_equipo_listar_all_Result t)
-        {
+        {   
             try
             {
                 e.usp_registrar_equipo(t.Nombre,t.SO,t.Procesador,t.RAM,t.TarjetaMadre);

@@ -1,11 +1,7 @@
-﻿using appcongreso.EF;
-using appcongreso.Model;
-using System;
+﻿using appcongreso.Model;
+using CapaDatos.EF;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaNegocios.Controller
 {

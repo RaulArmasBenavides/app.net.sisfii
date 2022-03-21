@@ -1,4 +1,5 @@
-﻿using CapaNegocios.Controller;
+﻿using CapaDatos.EF;
+using CapaNegocios.Controller;
 using CapaPresentacion.Util;
 using System;
 using System.Drawing;
@@ -26,7 +27,7 @@ namespace CapaPresentacion
         {
 
             
-           var pro =  obj.usuarioBuscarDatos(new appcongreso.EF.usp_buscar_usuario_nombre_Result()
+           var pro =  obj.usuarioBuscarDatos(new usp_buscar_usuario_nombre_Result()
             {
                 usuario = _usuario
             });
@@ -264,7 +265,7 @@ namespace CapaPresentacion
         {
             MemoryStream ms = new MemoryStream();
             pictureBox1.Image.Save(ms, ImageFormat.Jpeg);
-            obj.usuarioActualizarConPicture(new appcongreso.EF.usp_buscar_usuario_nombre_Result()
+            obj.usuarioActualizarConPicture(new CapaDatos.EF.usp_buscar_usuario_nombre_Result()
             {
                 usuario = _usuario,
                 clave = pwd1.Text.Trim(),

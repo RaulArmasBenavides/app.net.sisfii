@@ -1,4 +1,4 @@
-﻿using appcongreso.EF;
+﻿using CapaDatos.EF;
 using appcongreso.Utils;
 using CapaNegocios.Controller;
 using CapaPresentacion.Util;

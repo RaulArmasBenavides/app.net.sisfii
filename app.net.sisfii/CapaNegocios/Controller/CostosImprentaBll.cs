@@ -1,4 +1,4 @@
-﻿using appcongreso.EF;
+﻿using CapaDatos.EF;
 using CapaDatos.Clases;
 using CapaDatos.Model;
 using System;

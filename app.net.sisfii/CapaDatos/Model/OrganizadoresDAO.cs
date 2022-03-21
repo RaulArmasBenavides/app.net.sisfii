@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using appcongreso.EF;
+using CapaDatos.EF;
 using System.Threading.Tasks;
 using CapaDatos.Service;
 using System.Data.Entity.Core.Objects;

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using appcongreso.EF;
+using CapaDatos.EF;
 using System.Data.SqlClient;
 using CapaDatos.Model;
 

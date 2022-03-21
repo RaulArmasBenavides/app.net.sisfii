@@ -1,7 +1,8 @@
-﻿using appcongreso.EF;
+﻿using CapaDatos.EF;
 using CapaDatos.Service;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.EntityClient;
 using System.Data.Entity.Core.Objects;
 using System.Linq;
 
@@ -10,8 +11,6 @@ namespace CapaDatos.Model
     public class ActividadDAO //: Service<usp_actividades_listar_all2_Result>
     {   // entidades  usando ENTITY FRAMEWORK
         bdgenericEntities e = new bdgenericEntities();
-
-
         public void create(usp_listar_actividades_all_Result t)
         {
             try

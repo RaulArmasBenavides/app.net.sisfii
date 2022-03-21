@@ -1,4 +1,4 @@
-﻿using appcongreso.EF;
+﻿using CapaDatos.EF;
 using CapaDatos.Model;
 using System.Collections.Generic;
 using System.Data.SqlClient;

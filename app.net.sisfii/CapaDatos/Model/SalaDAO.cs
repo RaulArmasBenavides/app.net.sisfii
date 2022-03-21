@@ -1,4 +1,5 @@
-﻿using appcongreso.EF;
+﻿using CapaDatos.DataBase;
+using CapaDatos.EF;
 using CapaDatos.Service;
 using System;
 using System.Collections.Generic;
@@ -8,9 +9,8 @@ using System.Threading.Tasks;
 
 namespace CapaDatos.Model
 {
-    public class SalaDAO : Service<usp_listar_salas_all_Result>
+    public class SalaDAO : AccesoDB,Service<usp_listar_salas_all_Result>
     {
-        bdgenericEntities e = new bdgenericEntities();
         public void create(usp_listar_salas_all_Result t)
         {
             try

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace appcongreso.EF
+namespace CapaDatos.EF
 {
     using System;
     using System.Data.Entity;

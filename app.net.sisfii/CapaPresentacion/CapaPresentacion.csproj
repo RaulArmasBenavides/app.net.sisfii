@@ -292,7 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
-      <Project>{7AF16640-B127-4766-B7E6-5E89BCBA6847}</Project>
+      <Project>{7af16640-b127-4766-b7e6-5e89bcba6847}</Project>
       <Name>CapaDatos</Name>
     </ProjectReference>
     <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">

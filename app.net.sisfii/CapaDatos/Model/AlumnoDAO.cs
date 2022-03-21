@@ -1,4 +1,5 @@
-﻿using appcongreso.EF;
+﻿using CapaDatos.DataBase;
+using CapaDatos.EF;
 using CapaDatos.Service;
 using System;
 using System.Collections.Generic;
@@ -6,9 +7,9 @@ using System.Linq;
 
 namespace CapaDatos.Model
 {
-    public class AlumnoDAO : Service<usp_listar_alumnos_all_Result>
+    public class AlumnoDAO : AccesoDB, Service<usp_listar_alumnos_all_Result>
     {
-        bdgenericEntities e = new bdgenericEntities();
+       // bdgenericEntities e = new bdgenericEntities();
         public void create(usp_listar_alumnos_all_Result t)
         {
             e.usp_registrar_alumno(t.ap_paterno, t.ap_materno, t.nombre, t.telefono, t.sexo, t.correo, t.DNI, t.carrera, t.direccion, t.tipo_alumno);
@@ -65,14 +66,8 @@ namespace CapaDatos.Model
 
                 throw ex;
             }
-            
           //  e.SaveChanges();
         }
-
-   
-
-
-
 
     }
 }
