@@ -471,7 +471,6 @@ namespace CapaPresentacion.View
             {
                 PdfDocument pdf = new PdfDocument();
                 DocumentoElectronico newdoc = new DocumentoElectronico();
-                const string TITULO_MENSAJE_ERROR = "Imprimiendo orden de compra";
                 string etapa = "INICIAL";
                 byte[] archivoFisivo = null;
 
@@ -527,10 +526,6 @@ namespace CapaPresentacion.View
 
             //marco 
             XRect rect = new XRect(40, 120 - 10, 790, 310);
-            XUnit _bottomMargin;
-            XUnit _topPosition;
-            XUnit _currentPosition;
-
             PdfPage page = new PdfPage();
             PdfPage page2 = new PdfPage();
             XGraphics Gfx;
@@ -546,7 +541,6 @@ namespace CapaPresentacion.View
             int altura;
             double cantidadLineaDetalle;
             string Motivo = string.Empty;
-            bool salto = false;
             #endregion
 
             //configuración de la página 

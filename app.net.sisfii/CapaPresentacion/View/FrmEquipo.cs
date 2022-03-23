@@ -306,8 +306,6 @@ namespace CapaPresentacion.View
             {
                 PdfDocument pdf = new PdfDocument();
                 DocumentoElectronico newdoc = new DocumentoElectronico();
-                const string TITULO_MENSAJE_ERROR = "Imprimiendo orden de compra";
-                string etapa = "INICIAL";
                 byte[] archivoFisivo = null;
 
                 pdf = ImprimirContenido(l);
@@ -358,17 +356,8 @@ namespace CapaPresentacion.View
             XFont xfontcabecera = new XFont("Arial", 11, XFontStyle.Bold); //negrita 
             XStringFormat format = new XStringFormat();
 
-            //constantes 
-            string Empresa;
-            string FirmaLDS = "Firmas autorizadas de Luz del Sur S.A.A. ";
-            string FirmaTecsur = "Firmas autorizadas de Tecsur S.A";
-            string FirmaInland = "Firmas autorizadas de Inland Energy S.A.C";
-
             //marco 
             XRect rect = new XRect(40, 120 - 10, 790, 310);
-            XUnit _bottomMargin;
-            XUnit _topPosition;
-            XUnit _currentPosition;
 
             PdfPage page = new PdfPage();
             PdfPage page2 = new PdfPage();
@@ -385,7 +374,6 @@ namespace CapaPresentacion.View
             int altura;
             double cantidadLineaDetalle;
             string Motivo = string.Empty;
-            bool salto = false;
             #endregion
 
             //configuración de la página 
@@ -398,9 +386,6 @@ namespace CapaPresentacion.View
             //ancholinea = 46;//MS021020_20200812_RMAB
             ancholinea = 44;
             ancholineaMotivo = 60; //MS021020_20200502_RMAB
-            int posIni = 0, posFin = 0;
-            Double TotalGeneral = 0;
-            int lineaRegistros = 0;
             margenIzquierdo = 40;
             margenSuperior = 40;
             margenSuperiorCabeceraDetalle = 120;

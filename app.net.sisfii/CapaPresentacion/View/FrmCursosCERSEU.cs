@@ -316,8 +316,6 @@ namespace CapaPresentacion.View
             {
                 PdfDocument pdf = new PdfDocument();
                 DocumentoElectronico newdoc = new DocumentoElectronico();
-                const string TITULO_MENSAJE_ERROR = "Imprimiendo orden de compra";
-                string etapa = "INICIAL";
                 byte[] archivoFisivo = null;
 
                 pdf = ImprimirContenido(l);
@@ -332,15 +330,13 @@ namespace CapaPresentacion.View
                 //    File.Delete(rutaArchivoMuestra);
 
                 //}
-
-
                 newdoc.nombreArchivo = nombre;
                 newdoc.archivoFisico = archivoFisivo;
                 return newdoc;
             }
             catch (Exception ex)
             {
-                throw ex; //LogOC.LogErrorEx(ex.Message + "[Business][" + MethodBase.GetCurrentMethod().Name + "]", Tipos.TipoErrorControlado.Grave);
+                throw ex; 
             }
 
             finally
@@ -368,17 +364,8 @@ namespace CapaPresentacion.View
             XFont xfontcabecera = new XFont("Arial", 11, XFontStyle.Bold); //negrita 
             XStringFormat format = new XStringFormat();
 
-            //constantes 
-            string Empresa;
-            string FirmaLDS = "Firmas autorizadas de Luz del Sur S.A.A. ";
-            string FirmaTecsur = "Firmas autorizadas de Tecsur S.A";
-            string FirmaInland = "Firmas autorizadas de Inland Energy S.A.C";
-
             //marco 
             XRect rect = new XRect(40, 120 - 10, 790, 310);
-            XUnit _bottomMargin;
-            XUnit _topPosition;
-            XUnit _currentPosition;
 
             PdfPage page = new PdfPage();
             PdfPage page2 = new PdfPage();
@@ -404,20 +391,14 @@ namespace CapaPresentacion.View
             Gfx = XGraphics.FromPdfPage(page);
             page.Size = PdfSharp.PageSize.A4; // tamaño del papel
             format.LineAlignment = XLineAlignment.Center;
-
-            //ancholinea = 46;//MS021020_20200812_RMAB
             ancholinea = 44;
             ancholineaMotivo = 60; //MS021020_20200502_RMAB
-            int posIni = 0, posFin = 0;
-            Double TotalGeneral = 0;
-            int lineaRegistros = 0;
             margenIzquierdo = 40;
             margenSuperior = 40;
             margenSuperiorCabeceraDetalle = 120;
             margenSuperiorPie = 480;
             espaciohorizontal = 30;
-            altura = 22; //MS021020_20200619_RMA
-
+            altura = 22;
 
             //logo1
             //logoUNMSM = CapaPresentacion.Properties.Resources.UNMSM;

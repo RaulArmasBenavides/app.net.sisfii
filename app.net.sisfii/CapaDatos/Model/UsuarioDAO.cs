@@ -1,4 +1,5 @@
-﻿using CapaDatos.EF;
+﻿using CapaDatos.DataBase;
+using CapaDatos.EF;
 using CapaDatos.Service;
 using System;
 using System.Collections.Generic;
@@ -7,15 +8,8 @@ using System.Linq;
 
 namespace CapaDatos.Model
 {
-    public class UsuarioDAO : Service<usp_usuarios_listar_all_Result>
+    public class UsuarioDAO : AccesoDB, Service<usp_usuarios_listar_all_Result>
     {
-
-        //clases 
-        //SqlCommand cmd;
-        //SqlDataReader dr;
-
-        bdgenericEntities e = new bdgenericEntities();
-        
         //crear usuario
         public void create(usp_usuarios_listar_all_Result t)
         {
@@ -71,24 +65,17 @@ namespace CapaDatos.Model
             return dato;
         }
 
-        //string usuario, string clave
-
         public ObjectResult<usp_ValidaUsuario_Result> validar(usp_usuarios_listar_all_Result t)
         {
-
-            return  e.usp_ValidaUsuario(t.usuario, t.clave);
-            //try
-            //{
-            //    if (Convert.ToInt32(e.usp_ValidaUsuario(t.usuario, t.clave)) == 1)
-            //        return 1;
-            //    else
-            //        return 0;
-            //}
-            //catch (SqlException ex)
-            //{
-            //    throw ex;
-            //}
-
+            try
+            {
+                return e.usp_ValidaUsuario(t.usuario, t.clave);
+            }
+            
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         /* public usp_usuarios_listar_all_Result validar(usp_usuarios_listar_all_Result t)
