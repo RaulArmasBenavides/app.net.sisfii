@@ -18,9 +18,22 @@ namespace CapaDatos.DataBase
         public AccesoDB()
         {
             String hostName = Dns.GetHostName();
+
+     
             EntityConnectionStringBuilder constconexion = new EntityConnectionStringBuilder();
             constconexion.Provider = "System.Data.SqlClient";
-            constconexion.ProviderConnectionString = $"data source={hostName}\\SQLEXPRESS;initial catalog=bdgeneric;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework";
+
+            if (hostName == "DESKTOP-7POB2NJ")
+            {
+                //sql server
+                constconexion.ProviderConnectionString = $"data source={hostName}\\SQLSERVER2019;initial catalog=bdgeneric;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework";
+            }
+            else
+            {
+                //express
+                constconexion.ProviderConnectionString = $"data source={hostName}\\SQLEXPRESS;initial catalog=bdgeneric;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework";
+            }
+            
             constconexion.Metadata = "res://*/EF.Model1.csdl|res://*/EF.Model1.ssdl|res://*/EF.Model1.msl";
             e = new bdgenericEntities(constconexion.ToString());
         }
