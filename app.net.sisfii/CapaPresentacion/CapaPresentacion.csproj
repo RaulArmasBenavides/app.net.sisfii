@@ -100,9 +100,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mail\IMailService.cs" />
     <Compile Include="Util\Constantes.cs" />
-    <Compile Include="Util\GestorCorreo.cs" />
+    <Compile Include="Util\MimeKitMailTool.cs" />
     <Compile Include="Util\Helper.cs" />
+    <Compile Include="Util\Mensajero.cs" />
+    <Compile Include="Util\OtherMailTool.cs" />
     <Compile Include="View\FrmCERSEUMain.cs">
       <SubType>Form</SubType>
     </Compile>

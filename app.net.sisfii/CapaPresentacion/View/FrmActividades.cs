@@ -13,11 +13,14 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using CapaPresentacion.Mail;
 
 namespace CapaDatos.View
 {
     public partial class FrmActividades : Form
     {
+
+
         bdgenericEntities c = new bdgenericEntities();
 
         //Instancia objetos de la clase business
@@ -32,13 +35,12 @@ namespace CapaDatos.View
         public FrmActividades()
         {
             InitializeComponent();
-            /*   this.Id = Id;
-               this.v = v;*/
         }
+
+
         private void listaActividades()
         {
             //dgvActividades.DataSource = obj.actividadeListar();
-            
         }
       
  
@@ -679,9 +681,11 @@ namespace CapaDatos.View
                     case 1:
                         obj.actividadeAdicionar(leerActividad());
                         msg = "Actividad registrada con éxito";
-                        string comentarios = " El evento " + txtnombreactividad.Text + " fue registrado el día " + dtpicker1.Text; 
-                        GestorCorreo ges = new GestorCorreo(comentarios);
-                        ges.EnviarCorreo(txtCorreoResponsable.Text);
+                        string comentarios = " El evento " + txtnombreactividad.Text + " fue registrado el día " + dtpicker1.Text;
+                        Mensajero m = new Mensajero(new MimeKitMailTool());
+                        m.Create();
+                        // GestorCorreo ges = new GestorCorreo(comentarios);
+                       // ges.EnviarCorreo(txtCorreoResponsable.Text);
                         MessageBox.Show("Se envió la notificación al director de escuela con éxito", "Éxito");
                         break;
                     case 2:

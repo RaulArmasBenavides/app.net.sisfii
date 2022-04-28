@@ -1,4 +1,5 @@
-﻿using MimeKit;
+﻿using CapaPresentacion.Mail;
+using MimeKit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,34 +8,33 @@ using System.Threading.Tasks;
 
 namespace CapaPresentacion.Constantes
 {
-    public class GestorCorreo
+    public class MimeKitMailTool : IMailService 
     {
 
         private string _cuerpoCorreo = string.Empty;
         //private SmtpClient cliente;
         //private static IConfiguration Configuration { get; set; }
         //private MailMessage email;
-        public GestorCorreo(string cuerpoCorreo)
+        public MimeKitMailTool()
         {
-            _cuerpoCorreo = cuerpoCorreo;
-        }
 
-        //using MailKit
-        public void EnviarCorreo(string correo)
+        }
+ 
+        public void Send()
         {
             var message = new MimeMessage();
             message.From.Add(new MailboxAddress("SISTEMA CERSEU", "imanol123valera@gmail.co"));
-            message.To.Add(new MailboxAddress("Ing. Wilder Ponce", correo));
+            message.To.Add(new MailboxAddress("Ing. Wilder Ponce", "Testing.."));
             message.Subject = "Notificación de registro de evento";
 
-      
+
             message.Body = new TextPart("plain")
             {
                 Text = @"Se le comunica que ha sido registrada una nueva actividad en el sistema de eventos del CERSEU"
-                      + "\n" +  _cuerpoCorreo
+                      + "\n" + _cuerpoCorreo
             };
 
-            
+
 
             using (var client = new MailKit.Net.Smtp.SmtpClient())
             {
@@ -50,5 +50,12 @@ namespace CapaPresentacion.Constantes
                 client.Disconnect(true);
             }
         }
+
+
+    
+
+     
+
+
     }
 }
