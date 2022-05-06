@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSala));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.LblLimpiar = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.npdCapacidad = new System.Windows.Forms.NumericUpDown();
@@ -53,7 +55,8 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtidsala = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LblLimpiar)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -61,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LblBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -78,6 +82,16 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información de la actividad";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(26, 43);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Nombre";
             // 
             // LblLimpiar
             // 
@@ -253,10 +267,12 @@
             this.dgvSalas.Location = new System.Drawing.Point(532, 13);
             this.dgvSalas.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSalas.Name = "dgvSalas";
+            this.dgvSalas.RowHeadersWidth = 51;
             this.dgvSalas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSalas.Size = new System.Drawing.Size(659, 362);
             this.dgvSalas.TabIndex = 3;
             this.dgvSalas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSalas_CellContentClick);
+            this.dgvSalas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvSalas_MouseUp);
             // 
             // groupBox2
             // 
@@ -361,15 +377,19 @@
             this.txtidsala.TabIndex = 5;
             this.txtidsala.Visible = false;
             // 
-            // label6
+            // contextMenuStrip1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 43);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Nombre";
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
+            // 
+            // aToolStripMenuItem
+            // 
+            this.aToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.aToolStripMenuItem.Text = "a";
             // 
             // FrmSala
             // 
@@ -395,6 +415,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LblBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,5 +448,7 @@
         private System.Windows.Forms.PictureBox LblLimpiar;
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
     }
 }

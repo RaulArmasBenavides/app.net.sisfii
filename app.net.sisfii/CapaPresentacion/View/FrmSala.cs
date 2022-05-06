@@ -271,5 +271,18 @@ namespace CapaDatos.View
                 MessageBox.Show("Ocurrió un error al exportar a Excel " + ex.Message, "error");
             }
         }
+
+        private void dgvSalas_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ToolStripMenuItem i = new ToolStripMenuItem();
+                i.Name = "hola";
+                i.Text = "hola2"; // must change
+                contextMenuStrip1.Items.Add(i);
+                contextMenuStrip1.Show(this, MousePosition);
+            }
+
+        }
     }
 }
