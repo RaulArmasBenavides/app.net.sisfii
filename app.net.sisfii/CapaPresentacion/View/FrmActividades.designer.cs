@@ -34,6 +34,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtCorreoResponsable = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.txtOtherPlace = new System.Windows.Forms.TextBox();
             this.rbnOther = new System.Windows.Forms.RadioButton();
             this.rbnUNMSM = new System.Windows.Forms.RadioButton();
@@ -54,6 +56,7 @@
             this.npdHoras = new System.Windows.Forms.NumericUpDown();
             this.cboListaEquipos = new System.Windows.Forms.ComboBox();
             this.cboAsistencias = new System.Windows.Forms.ComboBox();
+            this.btnListaAsistenci = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.cboSala = new System.Windows.Forms.ComboBox();
             this.dtpicker2 = new System.Windows.Forms.DateTimePicker();
@@ -62,6 +65,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dtpicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnListaEquipos = new System.Windows.Forms.Button();
             this.txtrolresponsable = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -78,20 +82,16 @@
             this.txtJustificacion = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvOrganizadores = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txtidActividades = new System.Windows.Forms.TextBox();
+            this.LblLimpiar = new System.Windows.Forms.PictureBox();
+            this.LblBuscar = new System.Windows.Forms.PictureBox();
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.btnAnular = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
-            this.btnListaAsistenci = new System.Windows.Forms.Button();
-            this.btnListaEquipos = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.LblLimpiar = new System.Windows.Forms.PictureBox();
-            this.LblBuscar = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtCorreoResponsable = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -118,7 +118,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1098, 684);
+            this.groupBox1.Size = new System.Drawing.Size(1189, 684);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información de la actividad";
@@ -126,7 +126,7 @@
             // 
             // txtasist
             // 
-            this.txtasist.Location = new System.Drawing.Point(823, 53);
+            this.txtasist.Location = new System.Drawing.Point(877, 54);
             this.txtasist.Margin = new System.Windows.Forms.Padding(4);
             this.txtasist.Name = "txtasist";
             this.txtasist.Size = new System.Drawing.Size(189, 22);
@@ -142,7 +142,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1036, 569);
+            this.tabControl1.Size = new System.Drawing.Size(1129, 588);
             this.tabControl1.TabIndex = 39;
             // 
             // tabPage1
@@ -153,7 +153,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1028, 540);
+            this.tabPage1.Size = new System.Drawing.Size(1121, 559);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Información general";
             // 
@@ -202,10 +202,28 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(997, 481);
+            this.groupBox3.Size = new System.Drawing.Size(1084, 504);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalles";
+            // 
+            // txtCorreoResponsable
+            // 
+            this.txtCorreoResponsable.Location = new System.Drawing.Point(165, 98);
+            this.txtCorreoResponsable.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCorreoResponsable.Name = "txtCorreoResponsable";
+            this.txtCorreoResponsable.Size = new System.Drawing.Size(353, 22);
+            this.txtCorreoResponsable.TabIndex = 10042;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(15, 98);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(138, 17);
+            this.label23.TabIndex = 10041;
+            this.label23.Text = "Correo Responsable";
             // 
             // txtOtherPlace
             // 
@@ -421,6 +439,18 @@
             this.cboAsistencias.Visible = false;
             this.cboAsistencias.SelectedIndexChanged += new System.EventHandler(this.cboAsistencias_SelectedIndexChanged);
             // 
+            // btnListaAsistenci
+            // 
+            this.btnListaAsistenci.Image = ((System.Drawing.Image)(resources.GetObject("btnListaAsistenci.Image")));
+            this.btnListaAsistenci.Location = new System.Drawing.Point(531, 381);
+            this.btnListaAsistenci.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnListaAsistenci.Name = "btnListaAsistenci";
+            this.btnListaAsistenci.Size = new System.Drawing.Size(39, 28);
+            this.btnListaAsistenci.TabIndex = 10020;
+            this.btnListaAsistenci.UseVisualStyleBackColor = true;
+            this.btnListaAsistenci.Visible = false;
+            this.btnListaAsistenci.Click += new System.EventHandler(this.btnListaAsistenci_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -443,17 +473,17 @@
             // 
             // dtpicker2
             // 
-            this.dtpicker2.Location = new System.Drawing.Point(612, 127);
+            this.dtpicker2.Location = new System.Drawing.Point(567, 132);
             this.dtpicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpicker2.Name = "dtpicker2";
-            this.dtpicker2.Size = new System.Drawing.Size(329, 22);
+            this.dtpicker2.Size = new System.Drawing.Size(279, 22);
             this.dtpicker2.TabIndex = 10016;
             this.dtpicker2.Value = new System.DateTime(2021, 8, 22, 2, 40, 36, 0);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(535, 127);
+            this.label9.Location = new System.Drawing.Point(490, 132);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 17);
@@ -497,9 +527,21 @@
             this.dtpicker1.Location = new System.Drawing.Point(165, 127);
             this.dtpicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpicker1.Name = "dtpicker1";
-            this.dtpicker1.Size = new System.Drawing.Size(353, 22);
+            this.dtpicker1.Size = new System.Drawing.Size(266, 22);
             this.dtpicker1.TabIndex = 10011;
             this.dtpicker1.Value = new System.DateTime(2021, 8, 22, 2, 40, 36, 0);
+            // 
+            // btnListaEquipos
+            // 
+            this.btnListaEquipos.Image = ((System.Drawing.Image)(resources.GetObject("btnListaEquipos.Image")));
+            this.btnListaEquipos.Location = new System.Drawing.Point(901, 414);
+            this.btnListaEquipos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnListaEquipos.Name = "btnListaEquipos";
+            this.btnListaEquipos.Size = new System.Drawing.Size(39, 27);
+            this.btnListaEquipos.TabIndex = 10008;
+            this.btnListaEquipos.UseVisualStyleBackColor = true;
+            this.btnListaEquipos.Visible = false;
+            this.btnListaEquipos.Click += new System.EventHandler(this.btnListaEquipos_Click);
             // 
             // txtrolresponsable
             // 
@@ -580,14 +622,14 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1013, 498);
+            this.tabPage2.Size = new System.Drawing.Size(1121, 559);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Evento";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(36, 341);
+            this.label15.Location = new System.Drawing.Point(24, 352);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(152, 17);
@@ -607,7 +649,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(96, 183);
+            this.label14.Location = new System.Drawing.Point(96, 203);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(67, 17);
@@ -627,7 +669,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(77, 38);
+            this.label13.Location = new System.Drawing.Point(78, 37);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(85, 17);
@@ -653,7 +695,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(1013, 498);
+            this.tabPage3.Size = new System.Drawing.Size(1121, 559);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Organizadores";
             // 
@@ -669,6 +711,19 @@
             this.dgvOrganizadores.Size = new System.Drawing.Size(915, 389);
             this.dgvOrganizadores.TabIndex = 10022;
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(39, 17);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 39);
+            this.button1.TabIndex = 10021;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -681,114 +736,12 @@
             // 
             // txtidActividades
             // 
-            this.txtidActividades.Location = new System.Drawing.Point(832, 23);
+            this.txtidActividades.Location = new System.Drawing.Point(877, 24);
             this.txtidActividades.Margin = new System.Windows.Forms.Padding(4);
             this.txtidActividades.Name = "txtidActividades";
             this.txtidActividades.Size = new System.Drawing.Size(189, 22);
             this.txtidActividades.TabIndex = 37;
             this.txtidActividades.Visible = false;
-            // 
-            // txtcodigo
-            // 
-            this.txtcodigo.Location = new System.Drawing.Point(115, 23);
-            this.txtcodigo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(189, 22);
-            this.txtcodigo.TabIndex = 1;
-            // 
-            // btnAnular
-            // 
-            this.btnAnular.Image = ((System.Drawing.Image)(resources.GetObject("btnAnular.Image")));
-            this.btnAnular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnular.Location = new System.Drawing.Point(1156, 123);
-            this.btnAnular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAnular.Name = "btnAnular";
-            this.btnAnular.Size = new System.Drawing.Size(104, 39);
-            this.btnAnular.TabIndex = 58;
-            this.btnAnular.Text = "Anular";
-            this.btnAnular.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAnular.UseVisualStyleBackColor = true;
-            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnActualizar.Location = new System.Drawing.Point(1156, 69);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(104, 47);
-            this.btnActualizar.TabIndex = 57;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Image = global::CapaPresentacion.Properties.Resources.Save_as;
-            this.btnGrabar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnGrabar.Location = new System.Drawing.Point(1156, 21);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(104, 41);
-            this.btnGrabar.TabIndex = 55;
-            this.btnGrabar.Text = "Grabar ";
-            this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
-            this.btnImprimir.Location = new System.Drawing.Point(1156, 169);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(104, 66);
-            this.btnImprimir.TabIndex = 54;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click_1);
-            // 
-            // btnListaAsistenci
-            // 
-            this.btnListaAsistenci.Image = ((System.Drawing.Image)(resources.GetObject("btnListaAsistenci.Image")));
-            this.btnListaAsistenci.Location = new System.Drawing.Point(531, 381);
-            this.btnListaAsistenci.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnListaAsistenci.Name = "btnListaAsistenci";
-            this.btnListaAsistenci.Size = new System.Drawing.Size(39, 28);
-            this.btnListaAsistenci.TabIndex = 10020;
-            this.btnListaAsistenci.UseVisualStyleBackColor = true;
-            this.btnListaAsistenci.Visible = false;
-            this.btnListaAsistenci.Click += new System.EventHandler(this.btnListaAsistenci_Click);
-            // 
-            // btnListaEquipos
-            // 
-            this.btnListaEquipos.Image = ((System.Drawing.Image)(resources.GetObject("btnListaEquipos.Image")));
-            this.btnListaEquipos.Location = new System.Drawing.Point(901, 414);
-            this.btnListaEquipos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnListaEquipos.Name = "btnListaEquipos";
-            this.btnListaEquipos.Size = new System.Drawing.Size(39, 27);
-            this.btnListaEquipos.TabIndex = 10008;
-            this.btnListaEquipos.UseVisualStyleBackColor = true;
-            this.btnListaEquipos.Visible = false;
-            this.btnListaEquipos.Click += new System.EventHandler(this.btnListaEquipos_Click);
-            // 
-            // button1
-            // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(39, 16);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 39);
-            this.button1.TabIndex = 10021;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // LblLimpiar
             // 
@@ -814,23 +767,70 @@
             this.LblBuscar.TabStop = false;
             this.LblBuscar.Click += new System.EventHandler(this.LblBuscar_Click);
             // 
-            // label23
+            // txtcodigo
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(15, 98);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(138, 17);
-            this.label23.TabIndex = 10041;
-            this.label23.Text = "Correo Responsable";
+            this.txtcodigo.Location = new System.Drawing.Point(115, 23);
+            this.txtcodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(189, 22);
+            this.txtcodigo.TabIndex = 1;
             // 
-            // txtCorreoResponsable
+            // btnAnular
             // 
-            this.txtCorreoResponsable.Location = new System.Drawing.Point(165, 98);
-            this.txtCorreoResponsable.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCorreoResponsable.Name = "txtCorreoResponsable";
-            this.txtCorreoResponsable.Size = new System.Drawing.Size(353, 22);
-            this.txtCorreoResponsable.TabIndex = 10042;
+            this.btnAnular.Image = ((System.Drawing.Image)(resources.GetObject("btnAnular.Image")));
+            this.btnAnular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnular.Location = new System.Drawing.Point(1255, 121);
+            this.btnAnular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(104, 39);
+            this.btnAnular.TabIndex = 58;
+            this.btnAnular.Text = "Anular";
+            this.btnAnular.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAnular.UseVisualStyleBackColor = true;
+            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
+            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnActualizar.Location = new System.Drawing.Point(1255, 68);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(104, 47);
+            this.btnActualizar.TabIndex = 57;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Image = global::CapaPresentacion.Properties.Resources.Save_as;
+            this.btnGrabar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnGrabar.Location = new System.Drawing.Point(1256, 21);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(104, 41);
+            this.btnGrabar.TabIndex = 55;
+            this.btnGrabar.Text = "Grabar ";
+            this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
+            this.btnImprimir.Location = new System.Drawing.Point(1255, 166);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(104, 66);
+            this.btnImprimir.TabIndex = 54;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click_1);
             // 
             // FrmActividades
             // 

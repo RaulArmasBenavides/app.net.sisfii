@@ -571,19 +571,18 @@ namespace CapaPresentacion
 
         private void rectificacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FrmRectificacion fr = new FrmRectificacion();
-            //Application.OpenForms.Cast<Form>();
-            //Form fm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FrmRectificacion);
+            FrmRectificacion fr = new FrmRectificacion();
+            Application.OpenForms.Cast<Form>();
+            Form fm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FrmRectificacion);
 
-            //if (fm != null)
-            //{
-            //    //si la instancia existe la pongo en primer plano
-            //    fm.BringToFront();
-            //    return;
-            //}
+            if (fm != null)
+            {
+                fm.BringToFront();
+                return;
+            }
 
-            //fr.MdiParent = this;
-            //fr.Show();
+            fr.MdiParent = this;
+            fr.Show();
         }
 
         private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
@@ -604,7 +603,6 @@ namespace CapaPresentacion
 
             if (fm != null)
             {
-                //si la instancia existe la pongo en primer plano
                 fm.BringToFront();
                 return;
             }

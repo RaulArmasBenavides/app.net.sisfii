@@ -211,11 +211,8 @@ namespace CapaDatos.View
                 txtubi.Text = pro.ubicacion;
                 cboTipoSala.Text = pro.tipo_sala;
                 npdCapacidad.Value = Convert.ToInt32(pro.capacidad);
-                //txtPrecio.Text = pro.PrecioUnidad.ToString();
                 //cboProveedor.SelectedValue = pro.IdProveedor;
-                //cboCategoria.SelectedValue = pro.IdCategoría;
-            
-                
+                      
                 btnAgregar.Enabled = false;
                 btnActualizar.Enabled = true;
                 btnEliminar.Enabled = true;

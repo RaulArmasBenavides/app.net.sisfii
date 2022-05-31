@@ -196,11 +196,11 @@
     <Compile Include="View\FrmSala.Designer.cs">
       <DependentUpon>FrmSala.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmRegistroParticipante.cs">
+    <Compile Include="View\FrmAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmRegistroParticipante.Designer.cs">
-      <DependentUpon>FrmRegistroParticipante.cs</DependentUpon>
+    <Compile Include="View\FrmAlumno.Designer.cs">
+      <DependentUpon>FrmAlumno.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Inicio.cs">
       <SubType>Form</SubType>
@@ -257,8 +257,8 @@
     <EmbeddedResource Include="View\FrmSala.resx">
       <DependentUpon>FrmSala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmRegistroParticipante.resx">
-      <DependentUpon>FrmRegistroParticipante.cs</DependentUpon>
+    <EmbeddedResource Include="View\FrmAlumno.resx">
+      <DependentUpon>FrmAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>

@@ -37,6 +37,7 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.LblLimpiar = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cmbSexo = new System.Windows.Forms.ComboBox();
@@ -61,7 +62,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LblBuscar = new System.Windows.Forms.PictureBox();
             this.txtfiltro = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParticipantes)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,8 +76,9 @@
             this.dgvParticipantes.Location = new System.Drawing.Point(470, 15);
             this.dgvParticipantes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvParticipantes.Name = "dgvParticipantes";
+            this.dgvParticipantes.RowHeadersWidth = 51;
             this.dgvParticipantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvParticipantes.Size = new System.Drawing.Size(742, 345);
+            this.dgvParticipantes.Size = new System.Drawing.Size(742, 376);
             this.dgvParticipantes.TabIndex = 3;
             this.dgvParticipantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvParticipantes_CellContentClick);
             // 
@@ -90,7 +91,7 @@
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnAgregar);
             this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox2.Location = new System.Drawing.Point(470, 368);
+            this.groupBox2.Location = new System.Drawing.Point(470, 399);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -182,14 +183,24 @@
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.LblBuscar);
             this.groupBox1.Controls.Add(this.txtfiltro);
-            this.groupBox1.Location = new System.Drawing.Point(29, 13);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(433, 482);
+            this.groupBox1.Size = new System.Drawing.Size(449, 513);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del participante";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(86, 44);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 17);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "DNI";
             // 
             // LblLimpiar
             // 
@@ -229,7 +240,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(396, 377);
+            this.groupBox3.Size = new System.Drawing.Size(396, 406);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalles";
@@ -446,28 +457,18 @@
             this.txtfiltro.Size = new System.Drawing.Size(189, 22);
             this.txtfiltro.TabIndex = 1;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(86, 44);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 17);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "DNI";
-            // 
             // FrmRegistroParticipante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(1225, 541);
+            this.ClientSize = new System.Drawing.Size(1225, 558);
             this.Controls.Add(this.dgvParticipantes);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmRegistroParticipante";
-            this.Text = ":: MANTENEDOR DE PARTICIPANTES::";
+            this.Text = ":: Frm Alumnos::";
             this.Load += new System.EventHandler(this.FrmRegistroParticipante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvParticipantes)).EndInit();
             this.groupBox2.ResumeLayout(false);

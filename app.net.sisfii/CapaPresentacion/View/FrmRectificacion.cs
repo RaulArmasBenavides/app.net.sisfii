@@ -1,10 +1,12 @@
-﻿using System;
+﻿using CapaNegocios.Controller;
+using System;
 using System.Windows.Forms;
 
-namespace CapaDatos.View
+namespace CapaPresentacion.View
 {
     public partial class FrmRectificacion : Form
     {
+        CursoBll obj = new CursoBll();
         public FrmRectificacion()
         {
             InitializeComponent();

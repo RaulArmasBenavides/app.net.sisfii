@@ -14,10 +14,7 @@ namespace CapaPresentacion.View
 {
     public partial class FrmCursosCERSEU : Form
     {
-
         bdgenericEntities c = new bdgenericEntities();
-
-        // INSTANCIAR OBJETO DE LA CLASE ProductoBll capa de negocio 
         CursoBll obj = new CursoBll();
         public FrmCursosCERSEU()
         {
