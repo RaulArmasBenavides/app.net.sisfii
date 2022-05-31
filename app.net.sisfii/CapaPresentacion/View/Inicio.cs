@@ -2,7 +2,9 @@
 using CapaPresentacion.View;
 using System;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CapaPresentacion
@@ -14,7 +16,28 @@ namespace CapaPresentacion
         public Inicio(string user)
         {
             _user = user;
-            InitializeComponent();          
+            InitializeComponent();
+            SetCulture();
+        }
+
+        static void SetCulture()
+        {
+            CultureInfo culturePeru = GetCulture();
+            Thread.CurrentThread.CurrentCulture = culturePeru;
+            Thread.CurrentThread.CurrentUICulture = culturePeru;
+        }
+
+        public static CultureInfo GetCulture()
+        {
+            CultureInfo culturePeru = new CultureInfo("es-PE", false);
+            //culturePeru.NumberFormat.NumberGroupSeparator = ".";
+            //culturePeru.NumberFormat.NumberDecimalSeparator = ",";
+
+            //culturePeru = new CultureInfo("es-PE", false);en-US
+            //culturePeru.NumberFormat.NumberGroupSeparator = ",";
+            //culturePeru.NumberFormat.NumberDecimalSeparator = ".";
+            //culturePeru.DateTimeFormat.LongDatePattern = "dd-MM-yyyy hh:mm:ss";
+            return culturePeru;
         }
 
         private void toolStripDropDownButton1_Click(object sender, EventArgs e)
