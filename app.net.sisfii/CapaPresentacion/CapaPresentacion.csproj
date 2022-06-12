@@ -112,22 +112,22 @@
     <Compile Include="View\FrmCERSEUMain.Designer.cs">
       <DependentUpon>FrmCERSEUMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmCursosCERSEU.cs">
+    <Compile Include="View\CERSEU\FrmCursosCERSEU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmCursosCERSEU.Designer.cs">
+    <Compile Include="View\CERSEU\FrmCursosCERSEU.Designer.cs">
       <DependentUpon>FrmCursosCERSEU.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmListaCursos.cs">
+    <Compile Include="View\Intranet\FrmListaCursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmListaCursos.Designer.cs">
+    <Compile Include="View\Intranet\FrmListaCursos.Designer.cs">
       <DependentUpon>FrmListaCursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmPrecios.cs">
+    <Compile Include="View\ERP\FrmPrecios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmPrecios.Designer.cs">
+    <Compile Include="View\ERP\FrmPrecios.Designer.cs">
       <DependentUpon>FrmPrecios.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -140,10 +140,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmOrganizadores.cs">
+    <Compile Include="View\CERSEU\FrmOrganizadores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmOrganizadores.Designer.cs">
+    <Compile Include="View\CERSEU\FrmOrganizadores.Designer.cs">
       <DependentUpon>FrmOrganizadores.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmEquipo.cs">
@@ -158,16 +158,16 @@
     <Compile Include="View\FrmListaEquipos.Designer.cs">
       <DependentUpon>FrmListaEquipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmRectificacion.cs">
+    <Compile Include="View\Intranet\FrmRectificacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmRectificacion.designer.cs">
+    <Compile Include="View\Intranet\FrmRectificacion.designer.cs">
       <DependentUpon>FrmRectificacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmImprenta.cs">
+    <Compile Include="View\ERP\FrmImprenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmImprenta.Designer.cs">
+    <Compile Include="View\ERP\FrmImprenta.Designer.cs">
       <DependentUpon>FrmImprenta.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Program.cs" />
@@ -178,10 +178,10 @@
     <Compile Include="View\EditarUsuario.designer.cs">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmActividades.cs">
+    <Compile Include="View\CERSEU\FrmActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmActividades.designer.cs">
+    <Compile Include="View\CERSEU\FrmActividades.designer.cs">
       <DependentUpon>FrmActividades.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmParticipantes.cs">
@@ -196,10 +196,10 @@
     <Compile Include="View\FrmSala.Designer.cs">
       <DependentUpon>FrmSala.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmAlumno.cs">
+    <Compile Include="View\Intranet\FrmAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmAlumno.Designer.cs">
+    <Compile Include="View\Intranet\FrmAlumno.Designer.cs">
       <DependentUpon>FrmAlumno.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Inicio.cs">
@@ -219,13 +219,13 @@
     <EmbeddedResource Include="View\FrmCERSEUMain.resx">
       <DependentUpon>FrmCERSEUMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmCursosCERSEU.resx">
+    <EmbeddedResource Include="View\CERSEU\FrmCursosCERSEU.resx">
       <DependentUpon>FrmCursosCERSEU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmListaCursos.resx">
+    <EmbeddedResource Include="View\Intranet\FrmListaCursos.resx">
       <DependentUpon>FrmListaCursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmPrecios.resx">
+    <EmbeddedResource Include="View\ERP\FrmPrecios.resx">
       <DependentUpon>FrmPrecios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -236,10 +236,10 @@
     <EmbeddedResource Include="View\EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmActividades.resx">
+    <EmbeddedResource Include="View\CERSEU\FrmActividades.resx">
       <DependentUpon>FrmActividades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmOrganizadores.resx">
+    <EmbeddedResource Include="View\CERSEU\FrmOrganizadores.resx">
       <DependentUpon>FrmOrganizadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmEquipo.resx">
@@ -251,13 +251,13 @@
     <EmbeddedResource Include="View\Frmparticipantes.resx">
       <DependentUpon>FrmParticipantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmImprenta.resx">
+    <EmbeddedResource Include="View\ERP\FrmImprenta.resx">
       <DependentUpon>FrmImprenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmSala.resx">
       <DependentUpon>FrmSala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmAlumno.resx">
+    <EmbeddedResource Include="View\Intranet\FrmAlumno.resx">
       <DependentUpon>FrmAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Inicio.resx">
@@ -266,7 +266,7 @@
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmRectificacion.resx">
+    <EmbeddedResource Include="View\Intranet\FrmRectificacion.resx">
       <DependentUpon>FrmRectificacion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

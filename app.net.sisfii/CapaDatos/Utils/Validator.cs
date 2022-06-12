@@ -61,6 +61,7 @@ namespace appcongreso.Utils
 
 
         //validación del dominio del correo  
+        [Obsolete]
         public bool ValidarMailDNS(string email, ref string mensaje)
         {
             string address = string.Empty;

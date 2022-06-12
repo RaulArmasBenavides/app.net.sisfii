@@ -10,7 +10,7 @@ namespace CapaDatos.Model
 {
     public class ActividadDAO //: Service<usp_actividades_listar_all2_Result>
     {   // entidades  usando ENTITY FRAMEWORK
-        bdgenericEntities e = new bdgenericEntities();
+        readonly bdgenericEntities e = new bdgenericEntities();
         public void create(usp_listar_actividades_all_Result t)
         {
             try

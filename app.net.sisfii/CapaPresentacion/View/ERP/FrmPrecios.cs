@@ -2,11 +2,10 @@
 using System;
 using System.Windows.Forms;
 
-namespace CapaPresentacion.View
+namespace CapaPresentacion.View.ERP
 {
     public partial class FrmPrecios : Form
     {
-
         CostosImprentaBll _imprenta;
         public FrmPrecios(CostosImprentaBll c )
         {
@@ -55,10 +54,6 @@ namespace CapaPresentacion.View
             else
             {
                 actualizaCampos();
-                //if (Validaciones("C"))
-                //{
-                //    procesar();
-                //}
             }
         }
 

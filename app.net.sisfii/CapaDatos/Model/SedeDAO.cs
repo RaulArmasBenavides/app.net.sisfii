@@ -10,7 +10,7 @@ namespace CapaDatos.Model
 {
     public class SedeDAO : Service<usp_listar_sede_all_Result>
     {
-        bdgenericEntities e = new bdgenericEntities();
+        readonly bdgenericEntities e = new bdgenericEntities();
 
         public void create(usp_listar_sede_all_Result t)
         {

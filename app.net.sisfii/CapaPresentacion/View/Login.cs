@@ -1,5 +1,6 @@
 ﻿using CapaDatos.EF;
 using CapaNegocios.Controller;
+using CapaPresentacion.View;
 using System;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace CapaPresentacion
 
 
         // INSTANCIAR OBJETO DE LA CLASE ProductoBll capa de negocio 
-        UsuarioBll obj = new UsuarioBll();
+        readonly UsuarioBll obj = new UsuarioBll();
         public Login()
         {
             InitializeComponent();

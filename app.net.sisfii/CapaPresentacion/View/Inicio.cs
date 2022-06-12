@@ -1,5 +1,7 @@
 ﻿using CapaDatos.View;
-using CapaPresentacion.View;
+using CapaDatos.View.CERSEU;
+using CapaPresentacion.View.CERSEU;
+using CapaPresentacion.View.ERP;
 using System;
 using System.Drawing;
 using System.Globalization;
@@ -7,7 +9,7 @@ using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace CapaPresentacion.View
 {
     public partial class Inicio : Form
     {

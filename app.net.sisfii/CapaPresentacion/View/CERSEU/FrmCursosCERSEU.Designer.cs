@@ -1,4 +1,4 @@
-﻿namespace CapaPresentacion.View
+﻿namespace CapaPresentacion.View.CERSEU
 {
     partial class FrmCursosCERSEU
     {
@@ -55,20 +55,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 130);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(68, 160);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.Size = new System.Drawing.Size(36, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tipo";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(88, 105);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(117, 129);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(166, 20);
+            this.txtNombre.Size = new System.Drawing.Size(220, 22);
             this.txtNombre.TabIndex = 4;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // groupBox2
             // 
@@ -79,21 +80,25 @@
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnAgregar);
             this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox2.Location = new System.Drawing.Point(315, 298);
+            this.groupBox2.Location = new System.Drawing.Point(420, 367);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(541, 98);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(721, 121);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opciones";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnExcel
             // 
             this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcel.Image = global::CapaPresentacion.Properties.Resources.excel_pequeno;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExcel.Location = new System.Drawing.Point(383, 19);
+            this.btnExcel.Location = new System.Drawing.Point(511, 23);
+            this.btnExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(73, 60);
+            this.btnExcel.Size = new System.Drawing.Size(97, 74);
             this.btnExcel.TabIndex = 53;
             this.btnExcel.Text = "A Excel";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -105,9 +110,10 @@
             // 
             this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
-            this.btnImprimir.Location = new System.Drawing.Point(462, 19);
+            this.btnImprimir.Location = new System.Drawing.Point(616, 23);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(69, 60);
+            this.btnImprimir.Size = new System.Drawing.Size(92, 74);
             this.btnImprimir.TabIndex = 5;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -120,9 +126,10 @@
             // 
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.Location = new System.Drawing.Point(308, 19);
+            this.btnEliminar.Location = new System.Drawing.Point(411, 23);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(69, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(92, 74);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -135,9 +142,10 @@
             // 
             this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(233, 19);
+            this.btnActualizar.Location = new System.Drawing.Point(311, 23);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(69, 60);
+            this.btnActualizar.Size = new System.Drawing.Size(92, 74);
             this.btnActualizar.TabIndex = 3;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -150,9 +158,10 @@
             // 
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.Location = new System.Drawing.Point(158, 19);
+            this.btnAgregar.Location = new System.Drawing.Point(211, 23);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(69, 60);
+            this.btnAgregar.Size = new System.Drawing.Size(92, 74);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -162,28 +171,32 @@
             // 
             // txtidCurso
             // 
-            this.txtidCurso.Location = new System.Drawing.Point(88, 84);
-            this.txtidCurso.Margin = new System.Windows.Forms.Padding(2);
+            this.txtidCurso.Location = new System.Drawing.Point(117, 103);
+            this.txtidCurso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtidCurso.Name = "txtidCurso";
-            this.txtidCurso.Size = new System.Drawing.Size(166, 20);
+            this.txtidCurso.Size = new System.Drawing.Size(220, 22);
             this.txtidCurso.TabIndex = 9;
             this.txtidCurso.Visible = false;
+            this.txtidCurso.TextChanged += new System.EventHandler(this.txtidCurso_TextChanged);
             // 
             // dgvCursos
             // 
             this.dgvCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCursos.Location = new System.Drawing.Point(315, 20);
+            this.dgvCursos.Location = new System.Drawing.Point(420, 25);
+            this.dgvCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvCursos.Name = "dgvCursos";
             this.dgvCursos.RowHeadersWidth = 51;
             this.dgvCursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCursos.Size = new System.Drawing.Size(541, 271);
+            this.dgvCursos.Size = new System.Drawing.Size(721, 334);
             this.dgvCursos.TabIndex = 10;
+            this.dgvCursos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCursos_CellContentClick);
             // 
             // LblLimpiar
             // 
             this.LblLimpiar.ErrorImage = null;
             this.LblLimpiar.Image = global::CapaPresentacion.Properties.Resources.Clean_2;
-            this.LblLimpiar.Location = new System.Drawing.Point(282, 80);
+            this.LblLimpiar.Location = new System.Drawing.Point(376, 98);
+            this.LblLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LblLimpiar.Name = "LblLimpiar";
             this.LblLimpiar.Size = new System.Drawing.Size(24, 24);
             this.LblLimpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -194,7 +207,8 @@
             // LblBuscar
             // 
             this.LblBuscar.Image = ((System.Drawing.Image)(resources.GetObject("LblBuscar.Image")));
-            this.LblBuscar.Location = new System.Drawing.Point(258, 80);
+            this.LblBuscar.Location = new System.Drawing.Point(344, 98);
+            this.LblBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LblBuscar.Name = "LblBuscar";
             this.LblBuscar.Size = new System.Drawing.Size(24, 24);
             this.LblBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -205,13 +219,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 87);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(52, 107);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.Size = new System.Drawing.Size(58, 17);
             this.label6.TabIndex = 51;
             this.label6.Text = "Nombre";
             this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // cboProgramas
             // 
@@ -221,21 +235,22 @@
             "Tecnología e Informática ( Cursos Libres)",
             "Cursos de Gestión y Especializaciones",
             "Moda y Confección Textil"});
-            this.cboProgramas.Location = new System.Drawing.Point(88, 22);
+            this.cboProgramas.Location = new System.Drawing.Point(117, 27);
+            this.cboProgramas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboProgramas.Name = "cboProgramas";
-            this.cboProgramas.Size = new System.Drawing.Size(213, 21);
+            this.cboProgramas.Size = new System.Drawing.Size(283, 24);
             this.cboProgramas.TabIndex = 10018;
             this.cboProgramas.SelectedIndexChanged += new System.EventHandler(this.cboProgramas_SelectedIndexChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 24);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(29, 30);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 13);
+            this.label7.Size = new System.Drawing.Size(77, 17);
             this.label7.TabIndex = 10019;
             this.label7.Text = "Programas";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // cboTipo
             // 
@@ -245,28 +260,29 @@
             "Tecnología e Informática ( Cursos Libres)",
             "Cursos de Gestión y Especializaciones",
             "Moda y Confección Textil"});
-            this.cboTipo.Location = new System.Drawing.Point(88, 127);
+            this.cboTipo.Location = new System.Drawing.Point(117, 156);
+            this.cboTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(166, 21);
+            this.cboTipo.Size = new System.Drawing.Size(220, 24);
             this.cboTipo.TabIndex = 10020;
             this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 108);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(52, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 10021;
             this.label2.Text = "Nombre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FrmCursosCERSEU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(890, 425);
+            this.ClientSize = new System.Drawing.Size(1187, 523);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.label7);
@@ -279,7 +295,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmCursosCERSEU";
             this.Text = ":: CURSOS CERSEU ::";
             this.Load += new System.EventHandler(this.FrmCursosCERSEU_Load);

@@ -14,8 +14,9 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using CapaPresentacion.Mail;
+using CapaPresentacion.View.CERSEU;
 
-namespace CapaDatos.View
+namespace CapaDatos.View.CERSEU
 {
     public partial class FrmActividades : Form
     {
@@ -24,14 +25,14 @@ namespace CapaDatos.View
         bdgenericEntities c = new bdgenericEntities();
 
         //Instancia objetos de la clase business
-        ActividadBll obj = new ActividadBll();
-        SalaBll salabll = new SalaBll();
+        readonly ActividadBll obj = new ActividadBll();
+        readonly SalaBll salabll = new SalaBll();
         SedeBll sedebll = new SedeBll();
-        AmbienteBll ambientebll = new AmbienteBll();
-        ListaEquiposBll listeqbll = new ListaEquiposBll();
+        readonly AmbienteBll ambientebll = new AmbienteBll();
+        readonly ListaEquiposBll listeqbll = new ListaEquiposBll();
         OrganizadoresBll asisbll = new OrganizadoresBll();
        // usp_actividades_listar_all2_Result pro;
-        //verPruebas v;
+
         public FrmActividades()
         {
             InitializeComponent();

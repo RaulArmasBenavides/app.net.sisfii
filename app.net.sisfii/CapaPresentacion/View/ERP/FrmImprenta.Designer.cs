@@ -1,4 +1,4 @@
-﻿namespace CapaPresentacion.View
+﻿namespace CapaPresentacion.View.ERP
 {
     partial class FrmImprenta
     {

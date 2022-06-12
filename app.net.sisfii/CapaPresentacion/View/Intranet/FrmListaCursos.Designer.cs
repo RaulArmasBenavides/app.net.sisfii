@@ -35,8 +35,8 @@
             // dgvListaCursos
             // 
             this.dgvListaCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaCursos.Location = new System.Drawing.Point(41, 152);
-            this.dgvListaCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvListaCursos.Location = new System.Drawing.Point(38, 74);
+            this.dgvListaCursos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvListaCursos.Name = "dgvListaCursos";
             this.dgvListaCursos.RowHeadersWidth = 51;
             this.dgvListaCursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -50,7 +50,7 @@
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(1210, 600);
             this.Controls.Add(this.dgvListaCursos);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmListaCursos";
             this.Text = ":: LISTA DE CURSOS OFRECIDOS POR CERSEU ::";
             this.Load += new System.EventHandler(this.FrmListaCursos_Load);

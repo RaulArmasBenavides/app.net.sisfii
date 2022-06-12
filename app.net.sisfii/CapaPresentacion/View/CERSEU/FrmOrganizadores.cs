@@ -13,7 +13,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace CapaPresentacion.View
+namespace CapaPresentacion.View.CERSEU
 {
     public partial class FrmOrganizadores : Form
     {
@@ -356,7 +356,6 @@ namespace CapaPresentacion.View
 
         private void FrmAsistencias_Load(object sender, EventArgs e)
         {
-            //test
             //txtidListaAsistencias.Text = "1";
             LimpiaControles();
             ConfigurarTabla();

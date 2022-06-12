@@ -7,31 +7,31 @@ using System.Linq;
 
 namespace CapaDatos.Model
 {
-    public class AlumnoDAO : AccesoDB, Service<usp_listar_alumnos_all_Result>
+    public class AlumnoDAO : AccesoDB, Service<usp_alumnos_listar_all_Result>
     {
        // bdgenericEntities e = new bdgenericEntities();
-        public void create(usp_listar_alumnos_all_Result t)
+        public void create(usp_alumnos_listar_all_Result t)
         {
-            e.usp_registrar_alumno(t.ap_paterno, t.ap_materno, t.nombre, t.telefono, t.sexo, t.correo, t.DNI, t.carrera, t.direccion, t.tipo_alumno);
+            e.usp_alumno_registrar(t.ap_paterno, t.ap_materno, t.nombre, t.telefono, t.sexo, t.correo, t.DNI, t.carrera, t.direccion, t.);
         }
 
-        public void delete(usp_listar_alumnos_all_Result t)
+        public void delete(usp_alumnos_listar_all_Result t)
         {
             e.usp_eliminar_alumno_dni(t.DNI);
         }
 
-        public usp_listar_alumnos_all_Result find(usp_listar_alumnos_all_Result t)
+        public usp_alumnos_listar_all_Result find(usp_alumnos_listar_all_Result t)
         {
             throw new NotImplementedException();
         }
 
-        public usp_listar_alumnos_all_Result findbyCode(usp_listar_alumnos_all_Result t)
+        public usp_alumnos_listar_all_Result findbyCode(usp_alumnos_listar_all_Result t)
         {
             usp_listar_alumnos_all_Result dato = null;
             var pro = e.usp_buscar_alumno_dni(t.DNI);
             foreach (var item in pro)
             {
-                dato = new usp_listar_alumnos_all_Result()
+                dato = new usp_alumnos_listar_all_Result()
                 {
                     idalumno = item.idalumno,
                     nombre = item.nombre,
@@ -50,12 +50,12 @@ namespace CapaDatos.Model
             return dato;
         }
 
-        public List<usp_listar_alumnos_all_Result> readAll()
+        public List<usp_alumnos_listar_all_Result> readAll()
         {
-            return e.usp_listar_alumnos_all().ToList();
+            return e.usp_alumnos_listar_all().ToList();
         }
 
-        public void update(usp_listar_alumnos_all_Result t)
+        public void update(usp_alumnos_listar_all_Result t)
         {
             try
             {

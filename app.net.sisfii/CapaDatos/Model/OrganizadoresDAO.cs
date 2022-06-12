@@ -12,7 +12,7 @@ namespace appcongreso.Model
     public class OrganizadoresDAO : Service<usp_organizadores_oficial_Result>
     {
         // entidades  usando ENTITY FRAMEWORK
-        bdgenericEntities entidades = new bdgenericEntities();
+        readonly bdgenericEntities entidades = new bdgenericEntities();
         public void create(usp_organizadores_oficial_Result t)
         {
             throw new NotImplementedException();

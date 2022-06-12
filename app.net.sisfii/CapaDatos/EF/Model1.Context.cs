@@ -1168,5 +1168,111 @@ namespace CapaDatos.EF
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<usp_buscar_usuario_nombre_Result>("usp_buscar_usuario_nombre", usuarioParameter);
         }
+    
+        public virtual int usp_alumno_eliminar_id(Nullable<int> idalumno)
+        {
+            var idalumnoParameter = idalumno.HasValue ?
+                new ObjectParameter("idalumno", idalumno) :
+                new ObjectParameter("idalumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_alumno_eliminar_id", idalumnoParameter);
+        }
+    
+        public virtual int usp_alumno_registrar(string ap_paterno, string ap_materno, string nombre, string telefono, string sexo, string correo, string dNI, string carrera, string direccion, string tipo_alumno)
+        {
+            var ap_paternoParameter = ap_paterno != null ?
+                new ObjectParameter("ap_paterno", ap_paterno) :
+                new ObjectParameter("ap_paterno", typeof(string));
+    
+            var ap_maternoParameter = ap_materno != null ?
+                new ObjectParameter("ap_materno", ap_materno) :
+                new ObjectParameter("ap_materno", typeof(string));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var telefonoParameter = telefono != null ?
+                new ObjectParameter("telefono", telefono) :
+                new ObjectParameter("telefono", typeof(string));
+    
+            var sexoParameter = sexo != null ?
+                new ObjectParameter("sexo", sexo) :
+                new ObjectParameter("sexo", typeof(string));
+    
+            var correoParameter = correo != null ?
+                new ObjectParameter("correo", correo) :
+                new ObjectParameter("correo", typeof(string));
+    
+            var dNIParameter = dNI != null ?
+                new ObjectParameter("DNI", dNI) :
+                new ObjectParameter("DNI", typeof(string));
+    
+            var carreraParameter = carrera != null ?
+                new ObjectParameter("carrera", carrera) :
+                new ObjectParameter("carrera", typeof(string));
+    
+            var direccionParameter = direccion != null ?
+                new ObjectParameter("direccion", direccion) :
+                new ObjectParameter("direccion", typeof(string));
+    
+            var tipo_alumnoParameter = tipo_alumno != null ?
+                new ObjectParameter("tipo_alumno", tipo_alumno) :
+                new ObjectParameter("tipo_alumno", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_alumno_registrar", ap_paternoParameter, ap_maternoParameter, nombreParameter, telefonoParameter, sexoParameter, correoParameter, dNIParameter, carreraParameter, direccionParameter, tipo_alumnoParameter);
+        }
+    
+        public virtual ObjectResult<usp_alumnos_listar_all_Result> usp_alumnos_listar_all()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<usp_alumnos_listar_all_Result>("usp_alumnos_listar_all");
+        }
+    
+        public virtual ObjectResult<usp_buscar_sala_nombre_Result> usp_buscar_sala_nombre(string nombre)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<usp_buscar_sala_nombre_Result>("usp_buscar_sala_nombre", nombreParameter);
+        }
+    
+        public virtual int usp_curso_registrar(string nombreCurso, string malla, string tipo, Nullable<int> idCiclo, Nullable<int> idTarifa)
+        {
+            var nombreCursoParameter = nombreCurso != null ?
+                new ObjectParameter("nombreCurso", nombreCurso) :
+                new ObjectParameter("nombreCurso", typeof(string));
+    
+            var mallaParameter = malla != null ?
+                new ObjectParameter("malla", malla) :
+                new ObjectParameter("malla", typeof(string));
+    
+            var tipoParameter = tipo != null ?
+                new ObjectParameter("tipo", tipo) :
+                new ObjectParameter("tipo", typeof(string));
+    
+            var idCicloParameter = idCiclo.HasValue ?
+                new ObjectParameter("idCiclo", idCiclo) :
+                new ObjectParameter("idCiclo", typeof(int));
+    
+            var idTarifaParameter = idTarifa.HasValue ?
+                new ObjectParameter("idTarifa", idTarifa) :
+                new ObjectParameter("idTarifa", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_curso_registrar", nombreCursoParameter, mallaParameter, tipoParameter, idCicloParameter, idTarifaParameter);
+        }
+    
+        public virtual int usp_valida_usuario_exists(string usuario, string clave, ObjectParameter result)
+        {
+            var usuarioParameter = usuario != null ?
+                new ObjectParameter("Usuario", usuario) :
+                new ObjectParameter("Usuario", typeof(string));
+    
+            var claveParameter = clave != null ?
+                new ObjectParameter("Clave", clave) :
+                new ObjectParameter("Clave", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_valida_usuario_exists", usuarioParameter, claveParameter, result);
+        }
     }
 }

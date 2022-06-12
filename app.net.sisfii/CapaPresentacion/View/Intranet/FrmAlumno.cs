@@ -131,8 +131,9 @@ namespace CapaPresentacion
             }
      
         }
-        
-         //tipo_accion C R U D
+
+        //tipo_accion C R U D
+        [Obsolete]
         private bool Validaciones(string tipo_accion)
         {
             string mensaje = "";

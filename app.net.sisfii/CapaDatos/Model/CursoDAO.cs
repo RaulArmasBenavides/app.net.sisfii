@@ -12,7 +12,7 @@ namespace appcongreso.Model
     {
 
         // entidades  usando ENTITY FRAMEWORK
-        bdgenericEntities e = new bdgenericEntities();
+        readonly bdgenericEntities e = new bdgenericEntities();
         public void create(usp_listar_curso_all_Result t)
         {
             try

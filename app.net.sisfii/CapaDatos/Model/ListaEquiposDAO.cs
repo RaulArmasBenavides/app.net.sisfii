@@ -11,7 +11,7 @@ namespace CapaDatos.Model
     {
 
         // entidades  usando ENTITY FRAMEWORK
-        bdgenericEntities entidades = new bdgenericEntities();
+        readonly bdgenericEntities entidades = new bdgenericEntities();
 
 
         public List<usp_lista_equipos_oficial_Result> find(usp_lista_equipos_oficial_Result t)

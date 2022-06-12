@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace CapaPresentacion.View
+namespace CapaPresentacion.View.ERP
 {
     public partial class FrmImprenta : Form
     {
