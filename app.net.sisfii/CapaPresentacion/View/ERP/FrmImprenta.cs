@@ -9,7 +9,7 @@ namespace CapaPresentacion.View.ERP
 {
     public partial class FrmImprenta : Form
     {
-        bdgenericEntities c = new bdgenericEntities();
+        readonly bdgenericEntities c = new bdgenericEntities();
 
         // INSTANCIAR OBJETO DE LA CLASE CostosImprentaBll capa de negocio 
         CostosImprentaBll obj = new CostosImprentaBll();

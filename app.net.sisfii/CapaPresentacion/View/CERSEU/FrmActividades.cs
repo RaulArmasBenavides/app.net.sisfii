@@ -1,5 +1,4 @@
 ﻿using CapaDatos.EF;
-using appcongreso.Utils;
 using CapaDatos.Clases;
 using CapaNegocios.Controller;
 using CapaPresentacion.Constantes;
@@ -13,8 +12,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using CapaPresentacion.Mail;
 using CapaPresentacion.View.CERSEU;
+using CapaDatos.Utils;
 
 namespace CapaDatos.View.CERSEU
 {

@@ -106,6 +106,13 @@
     <Compile Include="Util\Helper.cs" />
     <Compile Include="Util\Mensajero.cs" />
     <Compile Include="Util\OtherMailTool.cs" />
+    <Compile Include="View\ConfigInitial.cs" />
+    <Compile Include="View\Configuracion\frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Configuracion\frmConfiguracion.designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmCERSEUMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +223,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="View\Configuracion\frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmCERSEUMain.resx">
       <DependentUpon>FrmCERSEUMain.cs</DependentUpon>
     </EmbeddedResource>

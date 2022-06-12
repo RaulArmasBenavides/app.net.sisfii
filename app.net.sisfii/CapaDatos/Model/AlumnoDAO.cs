@@ -12,7 +12,7 @@ namespace CapaDatos.Model
        // bdgenericEntities e = new bdgenericEntities();
         public void create(usp_alumnos_listar_all_Result t)
         {
-            e.usp_alumno_registrar(t.ap_paterno, t.ap_materno, t.nombre, t.telefono, t.sexo, t.correo, t.DNI, t.carrera, t.direccion, t.);
+           // e.usp_alumno_registrar(t.ap_paterno, t.ap_materno, t.nombre, t.telefono, t.sexo, t.correo, t.DNI, t.carrera, t.direccion, t.);
         }
 
         public void delete(usp_alumnos_listar_all_Result t)

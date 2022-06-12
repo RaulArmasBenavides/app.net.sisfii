@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace appcongreso.Utils
+namespace CapaDatos.Utils
 {
     public class DocumentoElectronico
     {
